@@ -1,0 +1,32 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/hr-consulting.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gainge-consulting-hr.vercel.app"
+        }
+      ],
+      "destination": "https://gainge-hr-consulting.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gainge-hr-consulting.vercel.app"
+        }
+      ],
+      "destination": "https://gainge-hr-consulting.com/:path*",
+      "permanent": true
+    }
+  ]
+}
